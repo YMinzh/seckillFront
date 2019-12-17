@@ -2,7 +2,12 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import { CountDown } from 'vant';
+import './plugins/vant.js'
+import { Card } from 'vant';
 
+Vue.use(Card);
+Vue.use(CountDown);
 Vue.config.productionTip = false
 
 new Vue({
